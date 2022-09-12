@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<efxpt:design_db name="T35seg7" device_def="T35F400" location="C:\Efinity\2021.2\project\T35Jeff\TFOX\T35seg7" version="2021.2.323.6.17" db_version="20221004" last_change_date="Sat Sep 10 22:58:31 2022" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
+    <efxpt:device_info>
+        <efxpt:iobank_info>
+            <efxpt:iobank name="1A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1B" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1C" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1D" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="1E" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="2A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="2B" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="2C" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="3C_TR" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="3D" iostd="1.5 V"/>
+            <efxpt:iobank name="4A" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="4B" iostd="3.3 V LVTTL / LVCMOS"/>
+            <efxpt:iobank name="BL" iostd="1.2 V"/>
+            <efxpt:iobank name="BR" iostd="3.3 V LVTTL / LVCMOS"/>
+        </efxpt:iobank_info>
+        <efxpt:ctrl_info>
+            <efxpt:ctrl name="cfg" ctrl_def="CONFIG_CTRL0" clock_name="" is_clk_invert="false" cbsel_bus_name="cfg_CBSEL" config_ctrl_name="cfg_CONFIG" ena_capture_name="cfg_ENA" error_status_name="cfg_ERROR" um_signal_status_name="cfg_USR_STATUS" is_remote_update_enable="false" is_user_mode_enable="false"/>
+        </efxpt:ctrl_info>
+    </efxpt:device_info>
+    <efxpt:gpio_info device_def="T35F400">
+        <efxpt:gpio name="clockIn" gpio_def="GPIOR_138" mode="input" bus_name="" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:input_config name="clockIn" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="dp" gpio_def="GPIOL_81" mode="output" bus_name="" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:output_config name="dp" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="3"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="n_reset" gpio_def="GPIOL_112" mode="input" bus_name="" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:input_config name="n_reset" name_ddio_lo="" conn_type="normal" is_register="false" clock_name="" is_clock_inverted="false" pull_option="none" is_schmitt_trigger="false" ddio_type="none"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="segment7[0]" gpio_def="GPIOL_72" mode="output" bus_name="segment7" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:output_config name="segment7[0]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="3"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="segment7[1]" gpio_def="GPIOL_73" mode="output" bus_name="segment7" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:output_config name="segment7[1]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="3"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="segment7[2]" gpio_def="GPIOL_74" mode="output" bus_name="segment7" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:output_config name="segment7[2]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="3"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="segment7[3]" gpio_def="GPIOL_75" mode="output" bus_name="segment7" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:output_config name="segment7[3]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="3"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="segment7[4]" gpio_def="GPIOL_76" mode="output" bus_name="segment7" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:output_config name="segment7[4]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="3"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="segment7[5]" gpio_def="GPIOL_77" mode="output" bus_name="segment7" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:output_config name="segment7[5]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="3"/>
+        </efxpt:gpio>
+        <efxpt:gpio name="segment7[6]" gpio_def="GPIOL_79" mode="output" bus_name="segment7" is_lvds_gpio="false" io_standard="3.3 V LVTTL / LVCMOS">
+            <efxpt:output_config name="segment7[6]" name_ddio_lo="" register_option="none" clock_name="" is_clock_inverted="false" is_slew_rate="false" tied_option="none" ddio_type="none" drive_strength="3"/>
+        </efxpt:gpio>
+        <efxpt:global_unused_config state="input with weak pullup"/>
+        <efxpt:bus name="segment7" mode="output" msb="6" lsb="0"/>
+    </efxpt:gpio_info>
+    <efxpt:pll_info/>
+    <efxpt:lvds_info/>
+    <efxpt:jtag_info/>
+    <efxpt:ddr_info/>
+</efxpt:design_db>

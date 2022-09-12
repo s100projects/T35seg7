@@ -1,0 +1,50 @@
+# Efinity Interface Configuration
+# Version: 2021.2.323.6.17
+# Date: 2022-09-10 23:35
+#
+# Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
+#
+# Device: T35F400
+# Package: 400-ball FBGA (final)
+# Project: T35seg7
+# Configuration mode: active (x1)
+# Timing Model: C4 (final)
+
+
+# Device setting
+design.set_device_property("1A","VOLTAGE","3.3","IOBANK")
+design.set_device_property("1B","VOLTAGE","3.3","IOBANK")
+design.set_device_property("1C","VOLTAGE","3.3","IOBANK")
+design.set_device_property("1D","VOLTAGE","3.3","IOBANK")
+design.set_device_property("1E","VOLTAGE","3.3","IOBANK")
+design.set_device_property("2A","VOLTAGE","3.3","IOBANK")
+design.set_device_property("2B","VOLTAGE","3.3","IOBANK")
+design.set_device_property("2C","VOLTAGE","3.3","IOBANK")
+design.set_device_property("3C_TR","VOLTAGE","3.3","IOBANK")
+design.set_device_property("3D","VOLTAGE","1.5","IOBANK")
+design.set_device_property("4A","VOLTAGE","3.3","IOBANK")
+design.set_device_property("4B","VOLTAGE","3.3","IOBANK")
+design.set_device_property("BL","VOLTAGE","1.2","IOBANK")
+design.set_device_property("BR","VOLTAGE","3.3","IOBANK")
+
+# Create instance
+design.create_output_gpio("segment7",6,0)
+design.create_input_gpio("clockIn")
+design.create_output_gpio("dp")
+design.create_input_gpio("n_reset")
+
+# Set property, non-defaults
+design.set_property("segment7","DRIVE_STRENGTH","3")
+design.set_property("dp","DRIVE_STRENGTH","3")
+
+# Set resource assignment
+design.assign_pkg_pin("segment7[0]","D18")
+design.assign_pkg_pin("segment7[1]","B18")
+design.assign_pkg_pin("segment7[2]","C20")
+design.assign_pkg_pin("segment7[3]","E17")
+design.assign_pkg_pin("segment7[4]","C18")
+design.assign_pkg_pin("segment7[5]","B19")
+design.assign_pkg_pin("segment7[6]","D17")
+design.assign_pkg_pin("clockIn","T8")
+design.assign_pkg_pin("dp","H15")
+design.assign_pkg_pin("n_reset","B13")
