@@ -4,7 +4,7 @@
 *   This is a simple project that displays 0 to F on the T35        *
 *   seven segment display continuously.                             *
 *   TFOX, N4TLF September 9, 2021   You are free to use it          *
-*       however you like.  No warranty expressed or implied         *
+*       however you like.  No warranty expressed or implied for now        *
 ********************************************************************/
 
 module  T35seg7_top (
